@@ -20,6 +20,7 @@ const Navbar = () => {
         <nav className="hidden md:flex gap-6">
           <Link to="/" className="hover:text-yellow-400">Home</Link>
           <Link to="/about" className="hover:text-yellow-400">About</Link>
+          <Link to="/skills" className="hover:text-blue-400">Skills</Link>
           <Link to="/projects" className="hover:text-yellow-400">Projects</Link>
           <Link to="/resume" className="hover:text-yellow-400">Resume</Link>
           <Link to="/contact" className="hover:text-yellow-400">Contact</Link>

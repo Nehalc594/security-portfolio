@@ -1,12 +1,23 @@
 // src/pages/Home.jsx
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <section className="px-6 py-24 text-center">
-      <h1 className="text-4xl font-bold mb-4">Hi, I'm Nehal — Security Engineer</h1>
-      <p className="text-lg max-w-2xl mx-auto">I specialize in protecting systems, networks, and applications by designing secure architectures, conducting threat analysis, and implementing robust cybersecurity solutions.</p>
-    </section>
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-br from-gray-900 to-black text-white"
+    >
+      <h1 className="text-5xl font-bold mb-6">Nehal C</h1>
+      <h2 className="text-2xl mb-4">
+        Security Engineer | Application & Network Security | ZTNA Architect
+      </h2>
+      <p className="max-w-2xl text-lg">
+        I help organizations build secure systems through threat modeling, zero-trust architecture, and advanced defense tooling. Let’s secure the future — one system at a time.
+      </p>
+    </motion.section>
   );
 };
 
