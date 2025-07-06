@@ -1,23 +1,32 @@
 // src/pages/Home.jsx
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-br from-gray-900 to-black text-white"
-    >
-      <h1 className="text-5xl font-bold mb-6">Nehal C</h1>
-      <h2 className="text-2xl mb-4">
-        Security Engineer | Application & Network Security | ZTNA Architect
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white">
+      <img
+        src="/images/profile.png"
+        alt="Nehal Chowhan"
+        className="w-40 h-40 rounded-full shadow-lg mb-6 object-cover border-4 border-white"
+      />
+      
+      <h1 className="text-5xl font-bold mb-4 tracking-tight">Nehal Chowhan</h1>
+
+      <h2 className="text-2xl md:text-3xl font-medium mb-4 text-yellow-400">
+        Security Engineer | App & Network Security | ZTNA | DevSecOps
       </h2>
-      <p className="max-w-2xl text-lg">
-        I help organizations build secure systems through threat modeling, zero-trust architecture, and advanced defense tooling. Let’s secure the future — one system at a time.
+
+      <p className="max-w-2xl text-lg text-gray-300 mb-8 leading-relaxed">
+        I help organizations secure systems through threat modeling, zero-trust architecture, and security automation. Let's build a safer future — one layer at a time.
       </p>
-    </motion.section>
+
+      <a
+        href="/#projects"
+        className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded shadow-lg transition duration-300"
+      >
+        View My Projects
+      </a>
+    </section>
   );
 };
 

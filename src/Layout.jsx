@@ -28,12 +28,8 @@ const Layout = () => {
       <header className="bg-[#0c1b3a] dark:bg-gray-900 shadow-md sticky top-0 z-50 text-white">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 group">
-            <img
-              src="/images/nexola-logo.png"
-              alt="Nexola Tech"
-              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
-            <span className="text-2xl font-semibold">Nehal C</span>
+            
+            <span className="text-2xl font-semibold"> </span>
           </Link>
 
           <nav className="hidden md:flex gap-6 items-center">
